@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC490CD12C586CD200BAE4C4 /* EmojiPicker in Frameworks */ = {isa = PBXBuildFile; productRef = EC490CD02C586CD200BAE4C4 /* EmojiPicker */; };
 		ECC2C0A92C52F92A00DE2B47 /* MoneyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC2C0A82C52F92A00DE2B47 /* MoneyApp.swift */; };
 		ECC2C0AB2C52F92A00DE2B47 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC2C0AA2C52F92A00DE2B47 /* ContentView.swift */; };
 		ECC2C0AD2C52F92A00DE2B47 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC2C0AC2C52F92A00DE2B47 /* Transaction.swift */; };
@@ -40,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC490CD12C586CD200BAE4C4 /* EmojiPicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +106,9 @@
 			dependencies = (
 			);
 			name = Money;
+			packageProductDependencies = (
+				EC490CD02C586CD200BAE4C4 /* EmojiPicker */,
+			);
 			productName = Money;
 			productReference = ECC2C0A52C52F92A00DE2B47 /* Money.app */;
 			productType = "com.apple.product-type.application";
@@ -132,6 +137,9 @@
 				Base,
 			);
 			mainGroup = ECC2C09C2C52F92A00DE2B47;
+			packageReferences = (
+				EC490CCF2C586CD200BAE4C4 /* XCRemoteSwiftPackageReference "EmojiPicker" */,
+			);
 			productRefGroup = ECC2C0A62C52F92A00DE2B47 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -372,6 +380,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EC490CCF2C586CD200BAE4C4 /* XCRemoteSwiftPackageReference "EmojiPicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Kelvas09/EmojiPicker";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EC490CD02C586CD200BAE4C4 /* EmojiPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC490CCF2C586CD200BAE4C4 /* XCRemoteSwiftPackageReference "EmojiPicker" */;
+			productName = EmojiPicker;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ECC2C09D2C52F92A00DE2B47 /* Project object */;
 }
