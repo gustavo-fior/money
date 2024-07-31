@@ -10,8 +10,8 @@ struct NewTransactionButton: View {
             Image(systemName: "plus")
                 .font(.title.weight(.semibold))
                 .padding()
-                .background(Color.primary)
-                .foregroundColor(Color.gray)
+                .background(Color(.label))
+                .foregroundColor(Color(.systemBackground))
                 .clipShape(Circle())
                 .shadow(radius: 4, x: 0, y: 4)
         }

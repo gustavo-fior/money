@@ -37,7 +37,7 @@ struct NumberPad: View {
             }
         }) {
             Text(number.description)
-                .font(.title)
+                .font(.largeTitle)
                 .frame(width: 80, height: 80)
                 .foregroundColor(.primary)
         }
@@ -50,7 +50,7 @@ struct NumberPad: View {
             }
         }) {
             Text(".")
-                .font(.title)
+                .font(.largeTitle)
                 .frame(width: 80, height: 80)
                 .foregroundColor(.primary)
         }
