@@ -1,22 +1,13 @@
 {
-  "originHash" : "8557b65233c5529bc904ffcc153316083f321e7d4e057fa4d04f55bceee5a852",
+  "originHash" : "595d1748b1c3db11b79ffd9f75f2eb43bd054d2196cd9f3ba2c5add22061bf3c",
   "pins" : [
     {
-      "identity" : "emojipicker",
+      "identity" : "mcemojipicker",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/Kelvas09/EmojiPicker",
+      "location" : "https://github.com/izyumkin/MCEmojiPicker",
       "state" : {
-        "revision" : "d787591e2121b617209172ad6a8ebf2975f605ae",
-        "version" : "1.0.1"
-      }
-    },
-    {
-      "identity" : "smile",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/onmyway133/Smile",
-      "state" : {
-        "revision" : "40604722a7a56f735124e069fcbb58307637744b",
-        "version" : "2.1.0"
+        "revision" : "e0b4903b75ae1cc418d276d84d1cb946b8a1d73c",
+        "version" : "1.2.3"
       }
     }
   ],

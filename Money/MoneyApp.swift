@@ -20,6 +20,6 @@ struct MoneyApp: App {
         WindowGroup {
             ContentView()
         }
-        .modelContainer(sharedModelContainer)
+        .modelContainer(sharedModelContainer)   
     }
 }

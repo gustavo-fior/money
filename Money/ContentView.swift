@@ -10,16 +10,17 @@ struct ContentView: View {
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }
-            
+                .toolbarBackground(.background, for: .tabBar)
             HistoryView()
                 .tabItem {
                     Label("History", systemImage: "clock")
                 }
-            
+                .toolbarBackground(.background, for: .tabBar)
             SettingsView()
                 .tabItem {
                     Label("Settings", systemImage: "gear")
                 }
+                .toolbarBackground(.background, for: .tabBar)
         }
     }
 }

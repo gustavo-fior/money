@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EC490CD12C586CD200BAE4C4 /* EmojiPicker in Frameworks */ = {isa = PBXBuildFile; productRef = EC490CD02C586CD200BAE4C4 /* EmojiPicker */; };
+		EC990F702C5992C900F7B968 /* MCEmojiPicker in Frameworks */ = {isa = PBXBuildFile; productRef = EC990F6F2C5992C900F7B968 /* MCEmojiPicker */; };
+		EC990F732C59B3BE00F7B968 /* NewTransactionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC990F722C59B3BE00F7B968 /* NewTransactionButton.swift */; };
+		EC990F752C59B5DF00F7B968 /* AddTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC990F742C59B5DF00F7B968 /* AddTransactionView.swift */; };
+		EC990F772C59C35000F7B968 /* NumberPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC990F762C59C35000F7B968 /* NumberPad.swift */; };
 		ECC2C0A92C52F92A00DE2B47 /* MoneyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC2C0A82C52F92A00DE2B47 /* MoneyApp.swift */; };
 		ECC2C0AB2C52F92A00DE2B47 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC2C0AA2C52F92A00DE2B47 /* ContentView.swift */; };
 		ECC2C0AD2C52F92A00DE2B47 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC2C0AC2C52F92A00DE2B47 /* Transaction.swift */; };
@@ -22,6 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC990F722C59B3BE00F7B968 /* NewTransactionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTransactionButton.swift; sourceTree = "<group>"; };
+		EC990F742C59B5DF00F7B968 /* AddTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionView.swift; sourceTree = "<group>"; };
+		EC990F762C59C35000F7B968 /* NumberPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPad.swift; sourceTree = "<group>"; };
 		ECC2C0A52C52F92A00DE2B47 /* Money.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Money.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECC2C0A82C52F92A00DE2B47 /* MoneyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyApp.swift; sourceTree = "<group>"; };
 		ECC2C0AA2C52F92A00DE2B47 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -41,13 +47,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC490CD12C586CD200BAE4C4 /* EmojiPicker in Frameworks */,
+				EC990F702C5992C900F7B968 /* MCEmojiPicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC990F712C5994CB00F7B968 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ECC2C0AC2C52F92A00DE2B47 /* Transaction.swift */,
+				ECC2C0B82C52FAF700DE2B47 /* Category.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		ECC2C09C2C52F92A00DE2B47 = {
 			isa = PBXGroup;
 			children = (
@@ -67,15 +82,17 @@
 		ECC2C0A72C52F92A00DE2B47 /* Money */ = {
 			isa = PBXGroup;
 			children = (
+				EC990F712C5994CB00F7B968 /* Model */,
 				ECC2C0A82C52F92A00DE2B47 /* MoneyApp.swift */,
 				ECC2C0AA2C52F92A00DE2B47 /* ContentView.swift */,
 				ECC2C0BA2C52FE2300DE2B47 /* SettingsView.swift */,
 				ECC2C0C02C5308E000DE2B47 /* CategoriesView.swift */,
 				ECC2C0C22C532AB100DE2B47 /* AddCategoryView.swift */,
+				EC990F742C59B5DF00F7B968 /* AddTransactionView.swift */,
 				ECC2C0BC2C52FE2B00DE2B47 /* HomeView.swift */,
+				EC990F762C59C35000F7B968 /* NumberPad.swift */,
 				ECC2C0BE2C52FE3100DE2B47 /* HistoryView.swift */,
-				ECC2C0AC2C52F92A00DE2B47 /* Transaction.swift */,
-				ECC2C0B82C52FAF700DE2B47 /* Category.swift */,
+				EC990F722C59B3BE00F7B968 /* NewTransactionButton.swift */,
 				ECC2C0AE2C52F92B00DE2B47 /* Assets.xcassets */,
 				ECC2C0B02C52F92B00DE2B47 /* Preview Content */,
 			);
@@ -107,7 +124,7 @@
 			);
 			name = Money;
 			packageProductDependencies = (
-				EC490CD02C586CD200BAE4C4 /* EmojiPicker */,
+				EC990F6F2C5992C900F7B968 /* MCEmojiPicker */,
 			);
 			productName = Money;
 			productReference = ECC2C0A52C52F92A00DE2B47 /* Money.app */;
@@ -138,7 +155,7 @@
 			);
 			mainGroup = ECC2C09C2C52F92A00DE2B47;
 			packageReferences = (
-				EC490CCF2C586CD200BAE4C4 /* XCRemoteSwiftPackageReference "EmojiPicker" */,
+				EC990F6E2C5992C900F7B968 /* XCRemoteSwiftPackageReference "MCEmojiPicker" */,
 			);
 			productRefGroup = ECC2C0A62C52F92A00DE2B47 /* Products */;
 			projectDirPath = "";
@@ -166,7 +183,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC990F772C59C35000F7B968 /* NumberPad.swift in Sources */,
 				ECC2C0C12C5308E000DE2B47 /* CategoriesView.swift in Sources */,
+				EC990F752C59B5DF00F7B968 /* AddTransactionView.swift in Sources */,
+				EC990F732C59B3BE00F7B968 /* NewTransactionButton.swift in Sources */,
 				ECC2C0BF2C52FE3100DE2B47 /* HistoryView.swift in Sources */,
 				ECC2C0BB2C52FE2300DE2B47 /* SettingsView.swift in Sources */,
 				ECC2C0C32C532AB100DE2B47 /* AddCategoryView.swift in Sources */,
@@ -382,21 +402,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		EC490CCF2C586CD200BAE4C4 /* XCRemoteSwiftPackageReference "EmojiPicker" */ = {
+		EC990F6E2C5992C900F7B968 /* XCRemoteSwiftPackageReference "MCEmojiPicker" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Kelvas09/EmojiPicker";
+			repositoryURL = "https://github.com/izyumkin/MCEmojiPicker";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.1;
+				minimumVersion = 1.2.3;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		EC490CD02C586CD200BAE4C4 /* EmojiPicker */ = {
+		EC990F6F2C5992C900F7B968 /* MCEmojiPicker */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = EC490CCF2C586CD200BAE4C4 /* XCRemoteSwiftPackageReference "EmojiPicker" */;
-			productName = EmojiPicker;
+			package = EC990F6E2C5992C900F7B968 /* XCRemoteSwiftPackageReference "MCEmojiPicker" */;
+			productName = MCEmojiPicker;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
