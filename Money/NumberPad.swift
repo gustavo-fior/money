@@ -33,7 +33,9 @@ struct NumberPad: View {
             if amount == "0" {
                 amount = String(number)
             } else {
-                amount += String(number)
+                if (!(amount.contains(".") && amount.split(separator: ".").last?.count == 2) && amount.split(separator: ".").first!.count < 9) {
+                    amount += String(number)
+                }
             }
         }) {
             Text(number.description)
@@ -58,11 +60,15 @@ struct NumberPad: View {
     
     private func backspaceButton() -> some View {
         Button(action: {
-            if !amount.isEmpty {
-                amount.removeLast()
-            }
             if amount.isEmpty {
                 amount = "0"
+                
+            } else {
+                amount.removeLast()
+                
+                if (amount.last == ".") {
+                    amount.removeLast()
+                }
             }
         }) {
             Image(systemName: "delete.left")
