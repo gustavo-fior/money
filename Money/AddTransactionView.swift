@@ -28,7 +28,6 @@ struct AddTransactionView: View {
                 HStack {
                     Text("R$")
                         .font(.system(size: 32, weight: .regular))
-                        .padding(.vertical, 50)
                         .foregroundColor(.gray)
                     HStack(spacing: 0) {
                         ForEach(Array(amount.enumerated()), id: \.offset) { index, character in
@@ -52,20 +51,22 @@ struct AddTransactionView: View {
                 Spacer()
                 
                 NumberPad(amount: $amount)
+                    .padding(.bottom, 24)
                 
-                NavigationLink(destination: CategoriesView()) {
+                NavigationLink(destination: AddTransactionDetailsView(amount: amount)) {
                     ZStack {
                         HStack {
                             Spacer()
                             Image(systemName: "arrow.right")
+                                .foregroundColor(.gray)
                         }
                         Text("Continue")
                     }
                     .font(.title.weight(.medium))
                     .foregroundColor(Color(.systemBackground))
                     .frame(maxWidth: .infinity)
-                    .padding(.vertical,16)
-                    .padding(.horizontal,20)
+                    .padding(.vertical,12)
+                    .padding(.horizontal,16)
                     .background(Color(.label))
                     .cornerRadius(12)
                 }

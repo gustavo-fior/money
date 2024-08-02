@@ -3,6 +3,8 @@ import SwiftUI
 struct NumberPad: View {
     @Binding var amount: String
     
+    let maxAmountLength = 8
+    
     var body: some View {
         VStack(spacing: 10) {
             HStack(spacing: 30) {
@@ -29,11 +31,17 @@ struct NumberPad: View {
     }
     
     private func numberButton(_ number: Int) -> some View {
-        Button(action: {
+        let decimalLengthIsNotTwo = !(amount.contains(".") && amount.split(separator: ".").last?.count == 2)
+        
+        let lengthLimitIsNotOver = amount.contains(".") ?
+        amount.split(separator: ".").first!.count < maxAmountLength :
+        amount.count < maxAmountLength
+        
+        return Button(action: {
             if amount == "0" {
                 amount = String(number)
             } else {
-                if (!(amount.contains(".") && amount.split(separator: ".").last?.count == 2) && amount.split(separator: ".").first!.count < 9) {
+                if decimalLengthIsNotTwo && lengthLimitIsNotOver {
                     amount += String(number)
                 }
             }
@@ -47,7 +55,7 @@ struct NumberPad: View {
     
     private func decimalButton() -> some View {
         Button(action: {
-            if !amount.contains(".") {
+            if !amount.contains(".") && amount.count < maxAmountLength {
                 amount += "."
             }
         }) {

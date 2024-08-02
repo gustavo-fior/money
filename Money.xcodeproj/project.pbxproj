@@ -11,6 +11,7 @@
 		EC990F732C59B3BE00F7B968 /* NewTransactionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC990F722C59B3BE00F7B968 /* NewTransactionButton.swift */; };
 		EC990F752C59B5DF00F7B968 /* AddTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC990F742C59B5DF00F7B968 /* AddTransactionView.swift */; };
 		EC990F772C59C35000F7B968 /* NumberPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC990F762C59C35000F7B968 /* NumberPad.swift */; };
+		ECC0D90C2C5C3AA8007FD12E /* AddTransactionDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC0D90B2C5C3AA8007FD12E /* AddTransactionDetailsView.swift */; };
 		ECC2C0A92C52F92A00DE2B47 /* MoneyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC2C0A82C52F92A00DE2B47 /* MoneyApp.swift */; };
 		ECC2C0AB2C52F92A00DE2B47 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC2C0AA2C52F92A00DE2B47 /* ContentView.swift */; };
 		ECC2C0AD2C52F92A00DE2B47 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC2C0AC2C52F92A00DE2B47 /* Transaction.swift */; };
@@ -28,6 +29,7 @@
 		EC990F722C59B3BE00F7B968 /* NewTransactionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTransactionButton.swift; sourceTree = "<group>"; };
 		EC990F742C59B5DF00F7B968 /* AddTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionView.swift; sourceTree = "<group>"; };
 		EC990F762C59C35000F7B968 /* NumberPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPad.swift; sourceTree = "<group>"; };
+		ECC0D90B2C5C3AA8007FD12E /* AddTransactionDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionDetailsView.swift; sourceTree = "<group>"; };
 		ECC2C0A52C52F92A00DE2B47 /* Money.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Money.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECC2C0A82C52F92A00DE2B47 /* MoneyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyApp.swift; sourceTree = "<group>"; };
 		ECC2C0AA2C52F92A00DE2B47 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				ECC2C0C02C5308E000DE2B47 /* CategoriesView.swift */,
 				ECC2C0C22C532AB100DE2B47 /* AddCategoryView.swift */,
 				EC990F742C59B5DF00F7B968 /* AddTransactionView.swift */,
+				ECC0D90B2C5C3AA8007FD12E /* AddTransactionDetailsView.swift */,
 				ECC2C0BC2C52FE2B00DE2B47 /* HomeView.swift */,
 				EC990F762C59C35000F7B968 /* NumberPad.swift */,
 				ECC2C0BE2C52FE3100DE2B47 /* HistoryView.swift */,
@@ -189,6 +192,7 @@
 				EC990F732C59B3BE00F7B968 /* NewTransactionButton.swift in Sources */,
 				ECC2C0BF2C52FE3100DE2B47 /* HistoryView.swift in Sources */,
 				ECC2C0BB2C52FE2300DE2B47 /* SettingsView.swift in Sources */,
+				ECC0D90C2C5C3AA8007FD12E /* AddTransactionDetailsView.swift in Sources */,
 				ECC2C0C32C532AB100DE2B47 /* AddCategoryView.swift in Sources */,
 				ECC2C0AB2C52F92A00DE2B47 /* ContentView.swift in Sources */,
 				ECC2C0AD2C52F92A00DE2B47 /* Transaction.swift in Sources */,
